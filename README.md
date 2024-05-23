@@ -31,4 +31,5 @@ There are 7 types of Primitive data types:
 ### Reference (Non-Primitive):
 
 > "Here reference directly allocated to us"
+
 > "This is aslo known as non-primitive data types"
