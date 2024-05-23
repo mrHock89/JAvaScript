@@ -6,3 +6,5 @@ There are mainly two types of data types based on how data is inserted and acces
 
 - Primitive
 - Non-primitive
+
+### Primtive:
