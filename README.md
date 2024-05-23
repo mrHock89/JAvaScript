@@ -33,3 +33,9 @@ There are 7 types of Primitive data types:
 > "Here reference directly allocated to us"
 
 > "This is aslo known as non-primitive data types"
+
+There are mainly 3 types of Non-primitive: 
+
+- Array
+- Objects. This is very very important. If you master it you good to go
+- Functions
