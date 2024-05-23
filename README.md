@@ -48,15 +48,15 @@ There are mainly 3 types of Non-primitive:
 > "Return type of variables in JavaScript:"
 
 - Primitive Datatypes
-       - Number => number
-       - String  => string
-       - Boolean  => boolean
-       - null  => object
-       - undefined  =>  undefined
-       - Symbol  =>  symbol
-       - BigInt  =>  bigint
+   - Number => number
+   - String  => string
+   - Boolean  => boolean
+   - null  => object
+   - undefined  =>  undefined
+   - Symbol  =>  symbol
+   - BigInt  =>  bigint
 
 - Non-primitive Datatypes
-       - Arrays  =>  object
-       - Function  =>  function
-       - Object  =>  object
+   - Arrays  =>  object
+   - Function  =>  function
+   - Object  =>  object
