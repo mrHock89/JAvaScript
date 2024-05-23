@@ -64,4 +64,4 @@ There are mainly 3 types of Non-primitive:
 
 ### Note:
 
-> "In JavaScript, typeof null returns 'object', which is a historical bug and not an accurate reflection of null's type. null is actually a primitive value that represents the intentional absence of any object value. This quirk has been retained in the language for compatibility reasons. For accurate type checking of null, it's better to use strict equality (value === null)."
+> "In JavaScript, `typeof null` returns `'object'`, which is a historical bug and not an accurate reflection of null's type. `null` is actually a primitive value that represents the intentional absence of any object value. This quirk has been retained in the language for compatibility reasons. For accurate type checking of `null`, it's better to use strict equality (`value === null`)."
