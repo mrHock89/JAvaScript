@@ -51,7 +51,7 @@ There are mainly 3 types of Non-primitive:
    - Number => number
    - String  => string
    - Boolean  => boolean
-   - null  => object
+   - null  => object. This is a bug of Js. Actually 
    - undefined  =>  undefined
    - Symbol  =>  symbol
    - BigInt  =>  bigint
@@ -60,3 +60,7 @@ There are mainly 3 types of Non-primitive:
    - Arrays  =>  object
    - Function  =>  function
    - Object  =>  object
+
+### Note:
+
+> "In JavaScript, typeof null returns 'object', which is a historical bug and not an accurate reflection of null's type. null is actually a primitive value that represents the intentional absence of any object value. This quirk has been retained in the language for compatibility reasons. For accurate type checking of null, it's better to use strict equality (value === null)."
