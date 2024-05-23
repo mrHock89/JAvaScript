@@ -1,14 +1,28 @@
-// let score = 'Manoj'
-// console.log(typeof score);
+// let str1 = "Hello";
+// let str2 = ", Manoj";
+// let str3 = str1 + str2;
+// console.log(str3);
 
-// let valueInNumber = Number(score);
-// console.log(typeof score);
-// console.log(typeof valueInNumber);
-// console.log(valueInNumber);
+// console.log("1" + 2);
+// console.log("1" + "2");
+// console.log(1 + 2 + "2");
+// console.log("1" + 2 + 2);
 
-let isLoggedIn = " "
-let booleanIsLoggedIn = Boolean(isLoggedIn);
+let nu1, num2, num3;
 
-console.log(typeof booleanIsLoggedIn);
+num1 = num2 = num3 = 2 + 2;
+
+console.log(num1);
+
+// let gameCounter = 100;
+// console.log(++gameCounter);
+// console.log(gameCounter);
 
 
+// let number = 101;
+// console.log(number++);
+// console.log(number++);
+// console.log(number);
+
+console.log(+true);
+console.log(+"");
