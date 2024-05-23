@@ -8,9 +8,10 @@ There are mainly two types of data types based on how data is inserted and acces
 - Non-primitive
 
 <hr />
+
 ### Primitive:
 
-> "Primitive data types are call by vale." JavaScript
+> "Primitive data types are call by vale." 
 
 > "JavaScript is the world's most misunderstood programming language." - Douglas Crockford
 
