@@ -77,3 +77,7 @@ There are mainly 3 types of Non-primitive:
 ### Stack:
 
 > Stack is used by Primitiv data types.
+
+### Heap:
+
+> Reference is used
