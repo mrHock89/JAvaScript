@@ -37,5 +37,8 @@ There are 7 types of Primitive data types:
 There are mainly 3 types of Non-primitive: 
 
 - Array
-- Objects. This is very very important. If you master it you good to go
+- Objects. This is very very important. If you master it you good to go.
 - Functions
+
+
+> "JavaScript is a dynamically typed language. This means that variable types are determined at runtime rather than at compile-time. In dynamically typed languages, you don't have to declare the type of a variable when you create it. The type of a variable is determined based on the value assigned to it and can change as the program runs."
