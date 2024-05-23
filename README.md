@@ -25,3 +25,10 @@ There are 7 types of Primitive data types:
 - Undefine
 - Symbol. It is used to make a value `unique`.
 - BigInt
+
+<hr />
+
+### Reference (Non-Primitive):
+
+> "Here reference directly allocated to us"
+> "This is aslo known as non-primitive data types"
