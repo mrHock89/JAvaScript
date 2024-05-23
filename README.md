@@ -1,10 +1,8 @@
-# Stearted reLearning JavaScriptfrom scratch #
+# Started Relearning JavaScript from Scratch
 
 ## Data Types in JavaScript
 <hr />
-There are mainly two tyoes of data Types base on how to inser data and access data from memory
-```
-Primitive
-Non-primitive
+There are mainly two types of data types based on how data is inserted and accessed from memory:
 
-```
+- Primitive
+- Non-primitive
