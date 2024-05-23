@@ -11,5 +11,4 @@ There are mainly two types of data types based on how data is inserted and acces
 ### Primtive:
 > "Primitive data types are call by vale."
 > "JavaScript is the world's most misunderstood programming language." - Douglas Crockford
-
 > "Any application that can be written in JavaScript, will eventually be written in JavaScript." - Jeff Atwood
