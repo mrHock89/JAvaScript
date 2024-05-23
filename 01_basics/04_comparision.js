@@ -20,3 +20,6 @@ console.log(undefined == 0);
 console.log(undefined >= 0);
 
 console.log(typeof undefined)
+
+// To check strickly we have to use ===. It will check data type also with value
+ 
