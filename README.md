@@ -45,8 +45,9 @@ There are mainly 3 types of Non-primitive:
 
 #### Return type of variables in JavaScript:
 
-> "Return type of variables in JavaScript
-1) Primitive Datatypes
+> "Return type of variables in JavaScript:"
+
+- Primitive Datatypes
        - Number => number
        - String  => string
        - Boolean  => boolean
@@ -55,8 +56,7 @@ There are mainly 3 types of Non-primitive:
        - Symbol  =>  symbol
        - BigInt  =>  bigint
 
-2) Non-primitive Datatypes
+- Non-primitive Datatypes
        - Arrays  =>  object
        - Function  =>  function
        - Object  =>  object
-"
