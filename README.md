@@ -42,3 +42,21 @@ There are mainly 3 types of Non-primitive:
 
 
 > "JavaScript is a dynamically typed language. This means that variable types are determined at runtime rather than at compile-time. In dynamically typed languages, you don't have to declare the type of a variable when you create it. The type of a variable is determined based on the value assigned to it and can change as the program runs."
+
+#### Return type of variables in JavaScript:
+
+> "Return type of variables in JavaScript
+1) Primitive Datatypes
+       Number => number
+       String  => string
+       Boolean  => boolean
+       null  => object
+       undefined  =>  undefined
+       Symbol  =>  symbol
+       BigInt  =>  bigint
+
+2) Non-primitive Datatypes
+       Arrays  =>  object
+       Function  =>  function
+       Object  =>  object
+"

@@ -24,9 +24,11 @@ console.log(num1);
 // console.log(number++);
 // console.log(number);
 
-console.log(+true);
-console.log(+"");
+// console.log(+true);
+// console.log(+"");
 
-console.log('Hello World')
-console.log('Hello World')
-console.log('Hello World') 
+// console.log('Hello World')
+// console.log('Hello World')
+// console.log('Hello World') 
+
+console.log(null);
