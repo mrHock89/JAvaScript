@@ -98,3 +98,8 @@ Nowdays `'backticks'` is used for moderm Js String.
 > `console.log(Math.random());` => will give value between 0 and 1
 > `console.log(Math.random()* 10);`  
 > `console.log((Math.random()* 10) + 1);` => will give us value greater than 1
+
+<hr/>
+
+### How to get a value greater than a number?
+
