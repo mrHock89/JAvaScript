@@ -109,3 +109,8 @@ Nowdays `'backticks'` is used for moderm Js String.
    `console.log(Math.floor(Math.random() * (max - min * 1)));` => it will give a number greater or equal to 1
    `console.log(Math.floor(Math.random() * (max - min * 1)) + min);` => will give a number grater than min
 "
+
+
+### Date:
+
+> Data types of date in `'object'`. In date month is started from `'0'`. 
