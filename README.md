@@ -103,3 +103,9 @@ Nowdays `'backticks'` is used for moderm Js String.
 
 ### How to get a value greater than a number?
 
+> "
+   let min = 10;
+   let max = 20;
+   `console.log(Math.floor(Math.random() * (max - min * 1)));` => it will give a number greater or equal to 1
+   `console.log(Math.floor(Math.random() * (max - min * 1)) + min);` => will give a number grater than min
+"

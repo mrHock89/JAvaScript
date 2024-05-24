@@ -25,6 +25,11 @@ console.log("******************* MATH ***********************");
 
 // console.log(Math.min(3,4,0,0.1,-2));
 
-console.log(Math.random());
-console.log(Math.random()* 10); // without .
-console.log((Math.random()* 10) + 1); // will give us value greater than 1
+// console.log(Math.random());
+// console.log(Math.random()* 10); // without .
+// console.log((Math.random()* 10) + 1); // will give us value greater than 1
+
+let min = 10;
+   let max = 20;
+   console.log(Math.floor(Math.random() * (max - min * 1)));
+   console.log(Math.floor(Math.random() * (max - min * 1)) + min);
