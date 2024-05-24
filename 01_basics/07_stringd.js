@@ -33,6 +33,14 @@ const anotherName = mySerName.slice(-8, 4);
 // console.log(anotherName);
 
 const myALphaName = "   Maafsa      manfauf     ";
-console.log(myALphaName);
-console.log(myALphaName.trim());
-console.log(myALphaName.replace("aa", "hh"));
+// console.log(myALphaName);
+// console.log(myALphaName.trim());
+// console.log(myALphaName.replace("aa", "hh"));
+
+const url = "https://manoj.com/manoj%20mondal";
+// console.log(url.replace("%20",""));
+// console.log(url.includes("manoj"));
+
+let string = "manoj-mondal-bagula-nadia";
+console.log(string);
+let StringToArray = console.log(string.split("-"))

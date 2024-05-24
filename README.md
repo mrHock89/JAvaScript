@@ -91,3 +91,10 @@ Nowdays `'backticks'` is used for moderm Js String.
 ## DAy: 3 --> 24th May 2024:
 
 <hr />
+
+### Marh.random:
+
+> It valeu always will be between 0 and 1
+> `console.log(Math.random());` => will give value between 0 and 1
+> `console.log(Math.random()* 10);`  
+> `console.log((Math.random()* 10) + 1);` =? will give us value greater than 1
