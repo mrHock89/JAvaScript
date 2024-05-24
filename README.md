@@ -94,7 +94,7 @@ Nowdays `'backticks'` is used for moderm Js String.
 
 ### Marh.random:
 
-> It valeu always will be between 0 and 1
+> Its valeu always will be between 0 and 1
 > `console.log(Math.random());` => will give value between 0 and 1
 > `console.log(Math.random()* 10);`  
-> `console.log((Math.random()* 10) + 1);` =? will give us value greater than 1
+> `console.log((Math.random()* 10) + 1);` => will give us value greater than 1
