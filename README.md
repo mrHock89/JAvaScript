@@ -87,3 +87,7 @@ There are mainly 3 types of Non-primitive:
 ## String (23rd May '24 => 20:47:54):
 
 Nowdays `'backticks'` is used for moderm Js String.
+
+## DAy: 3 --> 24th May 2024:
+
+<hr />
