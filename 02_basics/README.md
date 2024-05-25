@@ -14,3 +14,8 @@
 - > `No-3. => const array3 = new Array(1, 2, 3, 4)`
 
 <hr />
+
+
+## Slice() and Splice() method in Array:
+
+<hr>
