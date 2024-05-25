@@ -51,3 +51,9 @@ console.log("Helo World");`"
 B  [ 1, 2, 3, 4, 5 ] \
 [ 2, 3, 4 ] \
 C [ 1, 5 ]"
+
+
+### push(), concat() and spread[...arr1, ...arr2]:
+<hr>
+
+- push() will push the array in to the array. \
