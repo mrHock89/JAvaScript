@@ -1,7 +1,7 @@
 // Array decleration 
 
 // number array
-const array = [1, 2, 3, 4, 5,];
+
 
 // Srting array
 const array2 = ["manoj", "raj"];
@@ -36,6 +36,7 @@ const newArray = array.join();
 //  slice and splice in Array
 
 console.log(`***************** Slice ******************`);
+const array = [1, 2, 3, 4, 5,];
 
 console.log("A ", array);
 
@@ -49,3 +50,4 @@ console.log("B ", array);
 const SpArray = array.splice(1,3);
 console.log(SpArray);
 console.log("C", array);
+console.log("Helo World");
