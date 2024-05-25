@@ -23,31 +23,31 @@
 
 - > Slice doesnot manupulate the main array.
 
-> "`const array = [1, 2, 3, 4, 5,];
+> "`const array = [1, 2, 3, 4, 5,]; \
 
-console.log("A ", array);
+console.log("A ", array); \
 
-const sArray = array.slice(1,3);
-console.log(sArray);
+const sArray = array.slice(1,3); \
+console.log(sArray); \
 console.log(array);`"
 
 > "`Output`
-A  [ 1, 2, 3, 4, 5 ]
-[ 2, 3 ]
+A  [ 1, 2, 3, 4, 5 ] \
+[ 2, 3 ] \
 [ 1, 2, 3, 4, 5 ]"
 
 ### splice():
 
 - > Splice manupulate the main array.
 
-> "`console.log("B ", array);
+> "`console.log("B ", array); \
 
-const SpArray = array.splice(1,3);
-console.log(SpArray);
-console.log("C", array);
-console.log("Helo World");`"
+const SpArray = array.splice(1,3); \
+console.log(SpArray);    \
+console.log("C", array); \
+console.log("Helo World");`" 
 
 > "`Output`
-B  [ 1, 2, 3, 4, 5 ]
-[ 2, 3, 4 ]
+B  [ 1, 2, 3, 4, 5 ] \
+[ 2, 3, 4 ] \
 C [ 1, 5 ]"
