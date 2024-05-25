@@ -56,4 +56,14 @@ C [ 1, 5 ]"
 ### push(), concat() and spread[...arr1, ...arr2]:
 <hr>
 
-- push() will push the array in to the array. \
+- push() will push the array in to the array. 
+> "marvel_heros.push(dc_heros) \
+console.log(marvel_heros);"
+
+> "[
+  'iron_man',
+  'thor',
+  'hulk',
+  'spider_man',
+  [ 'batman', 'superman', 'flash' ]
+]"
