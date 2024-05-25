@@ -67,3 +67,18 @@ console.log(marvel_heros);"
   'spider_man',
   [ 'batman', 'superman', 'flash' ]
 ]"
+
+- cancat() will add two array. It can not add more than two arrays.
+
+> "const new_all_heros = [...marvel_heros, ...dc_heros]; \
+console.log(new_all_heros);"
+
+> "`[
+  'iron_man',
+  'thor',
+  'hulk',
+  'spider_man',
+  'batman',
+  'superman',
+  'flash'
+]`"
