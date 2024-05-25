@@ -60,15 +60,30 @@ C [ 1, 5 ]"
 > "marvel_heros.push(dc_heros) \
 console.log(marvel_heros);"
 
-> "[
+> "`[
   'iron_man',
   'thor',
   'hulk',
   'spider_man',
   [ 'batman', 'superman', 'flash' ]
-]"
+]`"
 
 - cancat() will add two array. It can not add more than two arrays.
+
+> "all_heros = marvel_heros.concat(dc_heros); \
+console.log(all_heros);"
+
+> "`[
+  'iron_man',
+  'thor',
+  'hulk',
+  'spider_man',
+  'batman',
+  'superman',
+  'flash'
+]`"
+
+- We can overcome this limitation using sprage([...array1, ...arraty2, ..])
 
 > "const new_all_heros = [...marvel_heros, ...dc_heros]; \
 console.log(new_all_heros);"

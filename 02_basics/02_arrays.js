@@ -14,5 +14,6 @@ const all_heros = marvel_heros.concat(dc_heros);
 // Cancat will add two array. It can not add more than two arrays.
 // We can overcome this limitation using sprage([...array1, ...arraty2, ..])
 
-const new_all_heros = [...marvel_heros, ...dc_heros];
-console.log(new_all_heros);
+// const new_all_heros = [...marvel_heros, ...dc_heros];
+// console.log(new_all_heros);
+
