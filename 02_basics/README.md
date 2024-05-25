@@ -1,9 +1,9 @@
 # Day 4 Learning about Array in Js (25th May 2024):
 
-- Array is used to store multiple items under a single variable.
-- Array is object data types.
+- Array is used to store multiple items under a `'single variable'`.
+- Array is `object` data types.
 - JavaScript arrays are resizable and can contain a mix of different data types.
-- JS Arrays are zero-indexed.
+- JS Arrays are `zero-indexed`.
 - JavaScript array-copy operations create shallow copies. (Means give as reference. If we change value origin value will be changed.)
 
 <hr />
