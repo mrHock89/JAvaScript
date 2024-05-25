@@ -40,7 +40,7 @@ A  [ 1, 2, 3, 4, 5 ] \
 
 - > Splice manupulate the main array.
 
-> "`console.log("B ", array); \
+> "`console.log("B ", array); 
 
 const SpArray = array.splice(1,3); \
 console.log(SpArray);    \
