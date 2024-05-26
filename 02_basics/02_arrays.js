@@ -17,3 +17,21 @@ const all_heros = marvel_heros.concat(dc_heros);
 // const new_all_heros = [...marvel_heros, ...dc_heros];
 // console.log(new_all_heros);
 
+const loopArray = [1, 3, 4, [34, 5, 3,2, 2], [4, 5, 2, [10, 2, 11, 34, "ani"]]];
+
+const UnLoopArrya = loopArray.flat(Infinity);
+// console.log(UnLoopArrya);
+// flat() will simplify the arry.
+
+console.log(Array.isArray("Anirban"));
+console.log(Array.from("Anirban"));
+console.log(Array.from({name: "Nairban"}));
+
+// converting multiple varible to array
+let score1 = 100;
+let score2 = 200;
+let score3 = 300;
+
+const allNewArry = (Array.of(score1, score2, score3, "Anirban"));
+
+console.log(allNewArry);

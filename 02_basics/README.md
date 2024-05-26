@@ -97,3 +97,7 @@ console.log(new_all_heros);"
   'superman',
   'flash'
 ]`"
+
+<hr />
+
+## Objects in JavaScript:
