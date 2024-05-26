@@ -120,3 +120,21 @@ const UnLoopArrya = loopArray.flat(Infinity);"
 
 - `Medhod 1` using `literals` 
 > "`const ObjName = {};`"
+- `Method 2` using `constract`
+> "`Object.creat`"
+
+- In js Object have `key` and `value`
+> "Eg: \
+  const myObject = { \
+    name: "Anuj",  - >// or "name": "Anuj" \
+    age: 20,\
+    location: "London" \
+    email: "hfdkshdf4343@gmail.com"
+  }
+"
+- In js keys are usally string -> `name = > "name"`
+- We do not have to use `"name"` because if we do not declare it as sting still it will consoder as string.
+
+### Object Access: 
+
+- > `For full learning of access see '02_basics/03_objects.js'`
