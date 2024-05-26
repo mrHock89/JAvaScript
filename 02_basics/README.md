@@ -98,6 +98,25 @@ console.log(new_all_heros);"
   'flash'
 ]`"
 
+- flat() is used to create a single array from a loop array
+> "const loopArray = [1, 3, 4, [34, 5, 3,2, 2], [4, 5, 2, [10, 2, 11, 34, "ani"]]];
+
+const UnLoopArrya = loopArray.flat(Infinity);"
+
+> "`[
+  1, 3,  4,  34,
+  5, 3,  2,  2,
+  4, 5,  2,  10,
+  2, 11, 34, 'ani'
+]`"
 <hr />
 
 ## Objects in JavaScript:
+
+- we can declare objects in tow ways `using literals` and `using constractor`
+- When we will create objects using `constractor`, `singletone` will be created. 
+
+### Object Creation:
+
+- `Medhod 1` using `literals` 
+> "`const ObjName = {};`"
