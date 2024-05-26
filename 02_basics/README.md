@@ -138,3 +138,11 @@ const UnLoopArrya = loopArray.flat(Infinity);"
 ### Object Access: 
 
 - > `For full learning of access see '02_basics/03_objects.js'`
+
+### -- Learnt about --
+
+- Object decleration
+- object access
+- how to access and add `synbol` in object
+- how to `freez` a object or keys of a object
+- Using `function` in object.
