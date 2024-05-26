@@ -57,3 +57,4 @@ myObject.greeting2 = function() {
 myObject.greeting(); // calling function 
 myObject.greeting2(); // calling function 
 console.log(myObject[mySym]);
+console.log(myObject);
