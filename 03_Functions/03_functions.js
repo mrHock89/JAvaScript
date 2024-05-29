@@ -6,4 +6,6 @@ function myPrice(accArray){
     }
 }
 myPrice(myCartPrice);
+console.log("New array")
+myPrice([12,32,43,12,23])
 
