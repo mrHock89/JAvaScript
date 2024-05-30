@@ -18,4 +18,12 @@
 
 > - `In function we can acces 'objects' in function` 
 
+> - `We can access objects and arrays in function`
 
+> - `sprade(...) operator is used in function to get multipe value`
+
+<hr >
+<hr >
+
+# ********************** `SCOPE IN JavaScript` ************************
+<hr>
