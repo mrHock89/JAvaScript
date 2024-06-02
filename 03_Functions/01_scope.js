@@ -1,2 +1,3 @@
-var e = 10;
-console.log(window.e);
+// console.log(b)
+b = 2;
+console.log(typeof b);
