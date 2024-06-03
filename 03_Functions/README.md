@@ -60,3 +60,24 @@ console.log(d); // 20
 
 - Does not create a property on the global object.
 
+### Arrow functon: 
+
+> There are two ways to write arrow function
+- Basic Arrow function `Emplecit Return`
+> - Here we `return` a value from function. \
+const addTwo = (num1, num2) => { \
+    return num1 + num2; \
+}
+- `Implecit return` arrow function
+> - Here we `did not return` a value from the function. \
+const addthree = (num1, num2, num3) =>  num1 + num2 + num3;
+or \
+const addthree = (num1, num2, num3) =>  (num1 + num2 + num3);
+
+> - Object return \
+const addthree = () =>  ({username: "Manoj"});\
+  - We have to use `parethesis` to return object.
+  
+> - For more check out IIFE.js
+
+
