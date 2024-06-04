@@ -28,3 +28,4 @@
 
 ## Important notes:
 - to check if an array or object is empty or not check `truthy.js` file in `04_control_flow` folder.
+- `Nullish coalescing` operator check nullish_coalescingOp.js
