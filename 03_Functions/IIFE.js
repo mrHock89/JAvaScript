@@ -13,3 +13,5 @@
 // Implecit arrow function
 ((num) => (console.log(num * num))) (3);
 
+// IIFE creates private scope for variables, preventing them from pollutiong global scope and avoiding conflicts with other parts of code.
+
