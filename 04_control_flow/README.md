@@ -21,7 +21,9 @@
 - empty array (`[]`)
 - empty object (`{}`)
 - empty function (`function(){}`)
-
+- `false == 0`
+- `flase == ''`
+- `0 == ''`
 <hr>
 
 ## Important notes:
