@@ -16,4 +16,5 @@
 
 - In object we will use `for in` loop
 - In array we will use `for of` loop
-- `forEach()` did not return any thing. 
+- `forEach()` did not return any thing bydefault. 
+- for return we have to use `filter()`.
