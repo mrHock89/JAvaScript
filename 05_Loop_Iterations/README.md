@@ -16,3 +16,4 @@
 
 - In object we will use `for in` loop
 - In array we will use `for of` loop
+- `forEach()` did not return any thing. 
