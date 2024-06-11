@@ -69,6 +69,39 @@ buttons.forEach((button) => {
 ## Project 2:
 
 ```javascript
+// select form and store in a variable
+// have to stop form default action
+// select height and weight in int and store in a variable
+// we have to call values in event else we will get empty value
+// select result
+
+const form = document.querySelector('form');
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+
+  const height = parseInt(document.querySelector('#height').value);
+  const weight = parseInt(document.querySelector('#weight').value);
+  const results = document.querySelector('#results');
+
+  if (height === '' || height < 0 || isNaN(height)) {
+    results.innerHTML = `Please give a valid height ${height}`;
+  } else if (weight === '' || weight < 0 || isNaN(weight)) {
+    results.innerHTML = `Please give a valid weight ${weight}`;
+  } else {
+    const bmi = (weight / ((height * height) / 10000)).toFixed(2);
+    function summary(bmi) {
+      if (bmi < 18.6) {
+        return 'Under Weight';
+      } else if (bmi > 18.6 && bmi < 24.9) {
+        return 'Normal Range';
+      } else if (bmi > 24.9) {
+        return 'Overweight';
+      }
+    }
+    const bmiSummary = summary(bmi);
+    results.innerHTML = `<span>${bmi}</span><br /><span>${bmiSummary}</span>`;
+  }
+});
 
 
 ```
