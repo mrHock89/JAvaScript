@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const div = document.createElement('div');
+    console.log(div);
+    // Adding class
+    div.className = "main"
+    // adding id
+    div.id = Math.round(Math.random() * 10 + 1);
+    div.setAttribute("title", "generate title");
+    div.style.backgroundColor = "green";
+    div.style.padding = "12px";
+    const addText = document.createTextNode("Chai Aur Code");
+    div.innterText = "Chai Aur Codes";
+    
+    div.append(addText);
+    document.body.append(div)
+</script> 
+</html>
