@@ -18,3 +18,10 @@
 
 ## How to create a new event in DOM?
 <hr>
+
+### Today I have learnt about
+
+  - element adding
+  - element edditing
+  - element removing
+  
