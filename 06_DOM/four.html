@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Chai Aur Code</title>
+</head>
+<body style="color: white; background-color: #212121;">
+    <ul class="language">
+        <li >JavaScript</li>
+    </ul>
+</body>
+<script>
+
+    // Method 1 UnOptimize Way
+    function addLanguage(langName) {
+        // Creating a element
+        const li = document.createElement('li');
+
+        // adding conent /vlues in the created element
+        li.innerHTML = `${langName}`;
+
+        // adding the create element in the inner HTML body
+
+        // Method 1
+        document.querySelector('.language').appendChild(li)
+
+        // Method 2
+        // document.getElementsByClassName('language')[0].append(li);
+    }
+    addLanguage("Python");
+    addLanguage("TypeScript");
+    addLanguage("MySql");
+    addLanguage("C Language");
+    // console.log(document.getElementsByClassName('language'))
+    // console.log(document.querySelector('.language'))
+
+
+    // Method 2 Optimized Way
+    function addOptiLanguage(langName) {
+        // Creating Element
+        const li = document.createElement('li');
+
+        // Adding content/Values in the created element
+        const addText = document.createTextNode(langName);
+        li.appendChild(addText);
+        // Adding the createrd element in the inner Html body
+        
+        // Method 1
+        // document.querySelector('.language').appendChild(li);
+
+        // Method 2
+        document.getElementsByClassName('language')[0].appendChild(li)
+    }
+    addOptiLanguage("goLang")
+    addOptiLanguage("Java")
+
+    // Editing a language
+
+    // Selecting a child
+    const secondLang = document.querySelector("li:nth-child(2)");
+
+    // adding changed value
+
+    // Method 1 unOptimiized
+    // secondLang.innerHTML = "Mojo"
+
+    // Method 2 Optimized
+    const newLi = document.createElement('li');
+    newLi.textContent = "Mojo";
+    secondLang.replaceWith(newLi);
+
+    // Practice of editing
+
+    const firstlang = document.querySelector("li:first-child");
+    
+    // Method 1
+    // const firstNewLi = document.createElement('li');
+    // firstNewLi.textContent = "C ++ Language"
+    // firstlang.replaceWith(firstNewLi);
+
+    // Method 2
+    firstlang.outerHTML = "<li>Cpp Language </li>"
+
+
+    // Removing a element
+
+    const lastLanguage = document.querySelector('li:last-child');
+    lastLanguage.remove();
+
+
+</script>
+</html>
