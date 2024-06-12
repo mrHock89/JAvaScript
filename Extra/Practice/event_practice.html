@@ -19,71 +19,73 @@
    </div>
 </body>
 <script>
-    // document.getElementById('owl').onclick = function(){
-    //     alert('Owl');
-    // };
-    // attachEvent()
-    //jQuery - on
-
+    // method 1
     // document.getElementById('owl').addEventListener('click', function(){
+    //     alert('Clicked owl')
+    // })
+
+    // method 2
+    // document.getElementById('owl').onclick = function(){
     //     alert('Owl clicked again');
-    // });
-    // type, timestamp, defaultPrevented
-    // target, toElement, srcElement, currentTarget
-    // clintX, clintY, screenX, screenY
-    // altkey, ctrlkey, shiftkey, keyCode
+    // }
 
-    // event propogation
-
-    // 1.
-    // bubble mode buttom to top
-    // document.getElementById('images').addEventListener('click', function(e){
-    //     console.log('Clicked inside the images');
-    // }, false);
     // document.getElementById('owl').addEventListener('click', function(e){
-    //     console.log('clicked owl');
-    // }, false);
-
-    // 2.
-    // Capturing mode top to buttom
-    // document.getElementById('images').addEventListener('click', function(e){
-    //     console.log('Clicked inside the images');
-    // }, true);
-    // document.getElementById('owl').addEventListener('click', function(e){
-    //     console.log('clicked owl');
-    // }, true);
-    
-    // // 3. Stoping event propogation
-    // document.getElementById('images').addEventListener('click', function(e){
-    //     console.log('Clicked inside the images');
-    //     // e.stopPropagation();
-    // }, false);
-    // document.getElementById('owl').addEventListener('click', function(e){
-    //     console.log('clicked owl');
-    //     e.stopPropagation();
-    // }, false);
-
-    // document.getElementById('google').addEventListener('click', function(e){
-    //     console.log('google clicked')
-    //     e.preventDefault();
-    //     e.stopPropagation();
+    // console.log(e);
+    // console.log(e.target)
+    // console.log(e.type);
+    // console.log(e.timeStamp);
+    //     console.log(e.screenX);
+    //     console.log(e.screenY);
     // }, false)
 
-    // selecting images
-    document.querySelector('#images').addEventListener('click', function(e){
-        // console.log(e)
-        // console.log(e.target)
+
+    // Event Propogation
+
+    // bubbling
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log('Clicked inside the images')
+    // }, false); // false is the default value
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log('Clicked owl')
+    // }, false);
+
+    // Capturing
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log('Clicked inside the images')
+    // }, true); // false is the default value
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log('Clicked owl')
+    // }, true);
+
+    // stopping event propogation
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log('Clicked inside the images')
+    // }, false); // false is the default value
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log('Clicked owl')
+    //     e.stopPropagation();
+    // }, false);
+
+    // preventing default action
+    // document.getElementById('google').addEventListener('click', function(e){
+    //     console.log('Google Clicked');
+    //     e.preventDefault();
+    //     e.stopPropagation();
+    // })
+
+    // removing selected image
+    document.getElementById('images').addEventListener('click', function(e) {
+        // console.log(e);
+        // console.log(e.target);
         // console.log(e.target.parentNode);
         console.log(e.target.tagName);
         if(e.target.tagName === 'IMG'){
             let removeIt = e.target.parentNode;
-            console.log(e.target.id)
+            console.log(removeIt);
             removeIt.remove();
         }
 
-        
-        // method 2
-        // removeIt.parentNode.removeChild(removeIt);
-    }, false);
+    })
+
 </script>
 </html>
