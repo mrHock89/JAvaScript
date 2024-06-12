@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project for Async </title>
+</head>
+<body>
+    <h1>Chai Aur Code</h1>
+    <button id="stop">Stop</button>
+    
+</body>
+<script>
+
+    // Method 1
+    // setTimeout(() => {
+    //     console.log("Anirban")
+    // }, 2000);
+
+    //Method 2 -> using reference
+    const sayHi = function(){
+        console.log('Hello Everyone')
+    }
+    setTimeout(sayHi, 2000);
+
+    // setInterval(() => {
+    //     console.log('Manoj')
+    // }, );
+
+    // chaingin inner HTML of h1
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = 'Best JavaScript Series'
+    }
+    // setTimeout(changeText, 2000);
+
+    // stoping setTimeout
+    const changeMe = setTimeout(changeText, 2000);
+    // clearTimeout(changeMe);
+
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(changeMe);
+        console.log('STOPPED');
+    })
+</script>
+</html>

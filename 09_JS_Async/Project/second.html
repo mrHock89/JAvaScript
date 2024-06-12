@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project for Async </title>
+</head>
+<body>
+    <h1>Chai Aur JavaScript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    
+</body>
+    <script>
+        let intervalId;
+        const sayDate = () => {
+            console.log("Alex", Date.now())
+        }
+
+        // Function to start the interval
+        const startInterval = () => {
+             intervalId =  setInterval(sayDate, 2000);
+        };
+
+        // Initial Start
+        startInterval();
+
+        // Stopping by clicking stop button
+        document.querySelector('#stop').addEventListener('click', function(){
+            clearInterval(intervalId);
+            console.log('STOPPED');
+        })
+
+        // Starting by clicking start button
+        document.querySelector('#start').addEventListener('click', function(){
+            startInterval();
+            console.log('STARTED');
+        })
+    </script>
+</html>
