@@ -19,6 +19,22 @@
             margin-bottom: 20px;
 
         }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid black;
+            padding: 20px;
+            margin-top: 20px;
+            background-color: white;
+            margin-bottom: 10px;
+        }
+        .card img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
@@ -33,31 +49,87 @@
 <script>
     // 1.  xmlHTTP reauest AJEX
     const requestUrl = 'https://api.github.com/users/mrHock89'; // 2. api url
+    // 12. selecting fetch button
+    const fetchButton = document.querySelector('#fetchButton');
+    // 13. selecting cardCointainer
+    const cardCointainer = document.querySelector('#cardCointainer');
+
+
+    // 14. function for fetch data and creation card
+    fetchButton.addEventListener('click', function(){
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', requestUrl);
+
+        xhr.onreadystatechange = function(){
+            if(xhr.readyState === 4 && xhr.status === 200){
+                const data = JSON.parse(this.responseText);
+                createCard(data);
+            }
+        };
+
+        xhr.send();
+    });
+
+    function createCard(data) {
+        // clearing previous card if any
+        cardCointainer.innerHTML = '';
+
+        // create card element
+        const card = document.createElement('div');
+        card.className = 'card';
+
+        // creatre image element
+        const img = document.createElement('img')
+        img.className = 'userImage';
+
+        // inserting src and alt attribute of iamge element
+        img.src = data.avatar_url;
+        img.alt = data.login;
+
+        // create followers text
+        const followers = document.createElement('p');
+        followers.textContent = `Followers: ${data.followers}`;
+
+        // Append element to card
+        card.appendChild(img);
+        card.appendChild(followers);
+
+        // Append Card to cointainer
+        cardCointainer.appendChild(card);
+    }
+
+
+
+
+
+
+
+    // previous code
 
     // 3. method to request or send data XMLHttpRequest()
-    const xhr = new XMLHttpRequest();
-    xhr.open('GET', requestUrl) // 4. to send we have to call open() by above
+    // const xhr = new XMLHttpRequest();
+    // xhr.open('GET', requestUrl) // 4. to send we have to call open() by above
     // console.log("Hello") to chek is it working
 
     // 7. to track readyState continiously
-    xhr.onreadystatechange = function(){
+    // xhr.onreadystatechange = function(){
 
-        // 6. print readyState
-        console.log(xhr.readyState);
+    //     6. print readyState
+    //     console.log(xhr.readyState);
 
-        // 8. to detect state
-        if(xhr.readyState === 4){
-            // console.log(this.responseText) // 9. do waht you want to do
-            // console.log(this.responseText);
-            const data = JSON.parse(this.responseText); // 10. string so we have to convert to json
-            console.log(data)
-            console.log(typeof data) 
-            console.log(data.login);  // 11. output
-            console.log(data.avatar_url);  // 11. output
-        }
-    }
+    //      8. to detect state
+    //     if(xhr.readyState === 4){
+    //         console.log(this.responseText) // 9. do waht you want to do
+    //         console.log(this.responseText);
+    //         const data = JSON.parse(this.responseText); // 10. string so we have to convert to json
+    //         console.log(data)
+    //         console.log(typeof data) 
+    //         console.log(data.login);  // 11. output
+    //         console.log(data.avatar_url);  // 11. output
+    //     }
+    // }
 
-    // 5. calling open()
-    xhr.send();
+    // // 5. calling open()
+    // xhr.send();
 </script>
 </html>
