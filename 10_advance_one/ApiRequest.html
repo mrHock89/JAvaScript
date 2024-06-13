@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Api Request </title>
+    <style>
+        .imageCont {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* height: 60vh; */
+            border: 1px solid black;
+            background-color:orange;
+        }
+        .readyState {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="imageCont">
+        <h1 class="headingOfreadyState" style="margin-bottom: 20px;">ReadyState</h1>
+        <img src="./image.png" alt="xmlHttp Reauest readyState" class="readyState">
+    </div>
+</body>
+<script>
+    // 1.  xmlHTTP reauest AJEX
+    const requestUrl = 'https://api.github.com/users/mrHock89'; // 2. api url
+
+    // 3. method to request or send data XMLHttpRequest()
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', requestUrl) // 4. to send we have to call open() by above
+    // console.log("Hello") to chek is it working
+
+    // 7. to track readyState continiously
+    xhr.onreadystatechange = function(){
+
+        // 6. print readyState
+        console.log(xhr.readyState);
+
+        // 8. to detect state
+        if(xhr.readyState === 4){
+            // console.log(this.responseText) // 9. do waht you want to do
+            // console.log(this.responseText);
+            const data = JSON.parse(this.responseText); // 10. string so we have to convert to json
+            console.log(data)
+            console.log(typeof data) 
+            console.log(data.login);  // 11. output
+            console.log(data.avatar_url);  // 11. output
+        }
+    }
+
+    // 5. calling open()
+    xhr.send();
+</script>
+</html>
