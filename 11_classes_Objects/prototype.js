@@ -23,3 +23,7 @@ Array.prototype.heyManoj = function(){
 myHeros.manoj();
 myHeros.heyManoj();
 // herroPower.heyManoj();
+
+
+
+// inheritance
