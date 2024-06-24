@@ -66,7 +66,7 @@ String.prototype.trueLength = function(){
     console.log(`True length is : ${this.trim().length}`);
 }
 
-// using object
+// using `
 Object.prototype.truelength = function(){
     console.log(`${this}`);
     console.log(`True length is : ${this.trim().length}`);
