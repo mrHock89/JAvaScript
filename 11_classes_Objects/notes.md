@@ -6,8 +6,7 @@
 - toLowerCase
 
 ## Why use OOPs?
-Object literal
-
+- Object literal => {}
 - Constractor function
 - Prototye
 - Classes

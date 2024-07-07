@@ -26,3 +26,4 @@ const user = {
 // console.log(user['username']);
 // user.getUserDetiales();
 console.log(this)
+
