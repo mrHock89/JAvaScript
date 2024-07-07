@@ -8,8 +8,8 @@ function User(username, loginCount, isLoggedIn){
     return this;
 }
 
-const userOne = new User("manoj89", 12, true);
-const userTwo = new User("hsidfas", 10, false);
-// console.log(userOne);
-// console.log(userTwo);
-console.log(userOne.constructor);
+// const userOne = new User("manoj89", 12, true);
+// const userTwo = new User("hsidfas", 10, false);
+// // console.log(userOne);
+// // console.log(userTwo);
+// console.log(userOne.constructor);
