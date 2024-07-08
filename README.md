@@ -114,3 +114,12 @@ Nowdays `'backticks'` is used for moderm Js String.
 ### Date:
 
 > Data types of date in `'object'`. In date month is started from `'0'`. 
+
+
+## Restart: 8th July | Day 25th
+
+`Beacuse of exam and other this I am not abale to doing JS form today onword I will continue my coding`
+
+- Finished till Class
+- Continuening `bind` keyword.
+
